@@ -11,15 +11,14 @@ public class SpawnPointGenerator : MonoBehaviour
     
     [SerializeField] private GameObject spawnPoint;
     [SerializeField] private GameObject pointsParent;
-
-    // Use this for initialization
+    
     void Start()
     {
         if (ClearAllSpawnPoints)
         {
-            foreach (GameObject spawns in GameObject.FindGameObjectsWithTag("Spawnpoint"))
+            foreach (GameObject spawn in GameObject.FindGameObjectsWithTag("Spawnpoint"))
             {
-                Destroy(spawns);
+                Destroy(spawn);
             }
         }
         FormCircleSpawnPoints(DistanceOfSpawnPoints);
