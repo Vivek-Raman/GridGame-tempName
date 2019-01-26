@@ -17,9 +17,9 @@ public class SpawnPointGenerator : MonoBehaviour
     {
         if (ClearAllSpawnPoints)
         {
-            foreach (GameObject gameObject in GameObject.FindGameObjectsWithTag("Spawnpoint"))
+            foreach (GameObject spawns in GameObject.FindGameObjectsWithTag("Spawnpoint"))
             {
-                Destroy(gameObject);
+                Destroy(spawns);
             }
         }
         FormCircleSpawnPoints(DistanceOfSpawnPoints);
@@ -46,7 +46,8 @@ public class SpawnPointGenerator : MonoBehaviour
         // put spawnpoints on all of them at a distance of x
         foreach (Ray2D ray in rays)
         {
-            Instantiate(spawnPoint, ray.GetPoint(_distance), Quaternion.identity, pointsParent.transform);
+            Vector2 spawnLoc = ray.GetPoint(_distance);
+            Instantiate(spawnPoint, spawnLoc, Quaternion.FromToRotation(spawnLoc, pointsParent.transform.position) , pointsParent.transform);
         }
     }
 }

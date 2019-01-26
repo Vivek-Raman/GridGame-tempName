@@ -35,6 +35,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4218009780701762}
+  - component: {fileID: 114833672459276056}
+  - component: {fileID: 114309913407096998}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -80,8 +82,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1733402810541798}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.5, y: 0, z: 0}
-  m_LocalScale: {x: 5, y: 1, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1.5, z: 1}
   m_Children: []
   m_Father: {fileID: 4218009780701762}
   m_RootOrder: 1
@@ -94,11 +96,39 @@ Transform:
   m_GameObject: {fileID: 1288219700362628}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 5, y: 5, z: 1}
+  m_LocalScale: {x: 4, y: 4, z: 1}
   m_Children: []
   m_Father: {fileID: 4218009780701762}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114309913407096998
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1481007448068802}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c5a2215d106740d45a56e535c775eb94, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  LeashLength: 2
+  MovementSpeed: 10
+--- !u!114 &114833672459276056
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1481007448068802}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21a8dc1b95a0edf4194388956307ceea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DistanceOfSpawnPoints: 4
+  ClearAllSpawnPoints: 1
+  spawnPoint: {fileID: 1349217382349114, guid: 4f78271e587719248b40e9bc6a193a3a, type: 2}
+  pointsParent: {fileID: 1481007448068802}
 --- !u!212 &212304425843229820
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -180,7 +210,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Sprite: {fileID: 21300000, guid: 36395eb2c0b676740ae64897ca643628, type: 3}
   m_Color: {r: 1, g: 0.020645875, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
