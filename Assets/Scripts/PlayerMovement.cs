@@ -7,7 +7,6 @@ public class PlayerMovement : MonoBehaviour {
     public float LeashLength = 2.0f;
 
     [SerializeField] private float MovementSpeed = 3f;
-    [SerializeField] private bool isCircle = true;
     private Vector2 initPos;
 	
 	void Update ()

@@ -1,6 +1,8 @@
-# Shooter-Random
+# Grid Game \<needs improvement>
 
-A small arcade shooter style game made in Unity
+~~A small arcade shooter style game made in Unity~~
+
+A hypercasual game that resembles Whack-a-Mole and a challenging Manoeuvre mode.
 
 ## Idea Log
 

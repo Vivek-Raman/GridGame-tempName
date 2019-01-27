@@ -35,11 +35,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4218009780701762}
-  - component: {fileID: 114833672459276056}
   - component: {fileID: 114309913407096998}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -84,22 +83,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   LeashLength: 2
   MovementSpeed: 10
-  isCircle: 1
---- !u!114 &114833672459276056
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1481007448068802}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 21a8dc1b95a0edf4194388956307ceea, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  DistanceOfSpawnPoints: 4
-  ClearAllSpawnPoints: 1
-  spawnPoint: {fileID: 1349217382349114, guid: 4f78271e587719248b40e9bc6a193a3a, type: 2}
-  pointsParent: {fileID: 1481007448068802}
 --- !u!212 &212304425843229820
 SpriteRenderer:
   m_ObjectHideFlags: 1
