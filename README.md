@@ -15,3 +15,5 @@ A hypercasual game that resembles Whack-a-Mole and a challenging Manoeuvre mode.
 * Grid whack-a-mole (sci-fi)
 
 ___
+
+> Thanks to Blackthornprod for [this video](https://youtu.be/fwyAoE_uMFo) on 2D Lighting
