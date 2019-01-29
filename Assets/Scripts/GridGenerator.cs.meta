@@ -3,7 +3,18 @@ guid: b0f7d7bc35443344c9d5bf5a8ec4fcd4
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - CellPrefab1: {fileID: 1203840719463588, guid: 79fecf66b8f359c4abb1be442b90e91b,
+      type: 2}
+  - CellPrefab2: {instanceID: 0}
+  - CellPrefab3: {instanceID: 0}
+  - CellPrefab4: {instanceID: 0}
+  - CellPrefab5: {instanceID: 0}
+  - CellPrefab6: {instanceID: 0}
+  - CellPrefab7: {instanceID: 0}
+  - CellPrefab8: {instanceID: 0}
+  - CellPrefab9: {instanceID: 0}
+  - GridParentPrefab: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

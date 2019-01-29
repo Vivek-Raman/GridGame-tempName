@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class CellData : MonoBehaviour {
 
-    public float ContactTime = 0f;
-    public int CellIndex;
+    //[HideInInspector]
+    public float ContactTime = 0f; // TODO: HideInInspector
 
 	// Use this for initialization
 	void Start ()
@@ -13,8 +13,17 @@ public class CellData : MonoBehaviour {
 		
 	}
 	
-	// Update is called once per frame
-	void Update () {
-		
+	void Update ()
+    {
+        
 	}
+
+    private void OnTriggerStay2D(Collider2D other)
+    {
+        if (other.tag == "Player")
+        {
+            ContactTime += Time.deltaTime;
+            Debug.Log("Cell " + ": " + ContactTime.ToString());
+        }
+    }
 }
